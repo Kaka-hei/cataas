@@ -393,6 +393,9 @@ class CatSwipeApp {
     }
     
     showSummary() {
+       
+        document.getElementById('swipeContainer').style.display = 'none'; 
+
         this.cardStack.style.display = 'none';
         this.noCardsMessage.style.display = 'flex';
         
@@ -485,6 +488,8 @@ class CatSwipeApp {
     }
     
     async restart() {
+        
+        document.getElementById('swipeContainer').style.display = 'block'; 
         this.currentIndex = 0;
         this.likedCats = [];
         this.dislikedCats = [];
