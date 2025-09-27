@@ -175,11 +175,25 @@ header p {
     font-size: 1.8rem;
 }
 
-@media (max-width: 600px) {
-  .summary-section {
-    margin-top: 12px !important; /* Reduce as needed */
-    padding-top: 0 !important;
-  }
+@media (max-width: 768px) {
+    header {
+        margin-bottom: 8px; /* Reduce space below header */
+    }
+    .summary-section {
+        margin-top: 8px !important;   /* Add small space above summary */
+        padding: 16px;
+        margin-bottom: 12px;
+    }
+}
+@media (max-width: 480px) {
+    header {
+        margin-bottom: 6px;
+    }
+    .summary-section {
+        margin-top: 6px !important;
+        padding: 10px;
+        margin-bottom: 8px;
+    }
 }
 
 .stats {
