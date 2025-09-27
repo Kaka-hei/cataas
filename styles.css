@@ -175,36 +175,6 @@ header p {
     font-size: 1.8rem;
 }
 
-@media (max-width: 768px) {
-    body {
-        display: block !important;
-        align-items: unset !important;
-        justify-content: unset !important;
-        min-height: auto !important;
-    }
-    .app-container {
-        display: block !important;
-        min-height: auto !important;
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-    }
-    header {
-        margin-bottom: 0 !important;
-    }
-    .summary-section {
-        margin-top: 0 !important;
-        padding-top: 8px !important;
-        margin-bottom: 8px !important;
-    }
-}
-@media (max-width: 480px) {
-    .summary-section {
-        margin-top: 0 !important;
-        padding-top: 4px !important;
-        margin-bottom: 4px !important;
-    }
-}
-
 .stats {
     display: flex;
     justify-content: space-around;
