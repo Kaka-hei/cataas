@@ -54,7 +54,22 @@ header p {
     max-height: 500px;
 }
 
-
+@media (max-width: 768px) {
+    .swipe-container {
+        height: auto !important;
+        min-height: 0 !important;
+        margin-bottom: 4px !important;
+        max-height: none !important;
+    }
+}
+@media (max-width: 480px) {
+    .swipe-container {
+        height: auto !important;
+        min-height: 0 !important;
+        margin-bottom: 2px !important;
+        max-height: none !important;
+    }
+}
 
 /* Animations */
 @keyframes pulse {
