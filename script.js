@@ -376,7 +376,6 @@ class CatSwipeApp {
         card.style.boxShadow = '0 10px 30px rgba(0,0,0,0.3)';
         card.style.opacity = '1';
         
-        // Remove transition after animation completes
         setTimeout(() => {
             card.style.transition = '';
         }, 300);
@@ -441,20 +440,20 @@ class CatSwipeApp {
             this.isLoading = show;
             this.startLoadingAnimation();
         } else {
-            // Aggressively hide loading screen
+            
             console.log('Hiding loading, showing cards');
             this.loading.style.display = 'none';
             this.loading.style.visibility = 'hidden';
             this.loading.style.opacity = '0';
             this.loading.style.zIndex = '-1';
             
-            // Ensure card stack is visible when loading is done
+            
             this.cardStack.style.display = 'block';
             this.cardStack.style.zIndex = '10';
             this.cardStack.style.visibility = 'visible';
             this.cardStack.style.opacity = '1';
             
-            // Debug loading screen state
+            
             console.log('Loading screen display:', this.loading.style.display);
             console.log('Loading screen computed display:', window.getComputedStyle(this.loading).display);
             console.log('Loading screen visibility:', window.getComputedStyle(this.loading).visibility);
