@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#667eea">
+    <title>Cat Swipe App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>🐱 Cat Swipe</h1>
+            <p>Swipe right to like❤️, left to dislike👎</p>
+        </header>
+
+        <div class="swipe-container" id="swipeContainer">
+            <div class="card-stack" id="cardStack">
+                <!-- Cards will be dynamically added here -->
+            </div>
+            
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Loading cats<span class="loading-dots"></span></p>
+            </div>
+            
+            <div class="no-cards-message" id="noCardsMessage" style="display: none;">
+                <h2>No more cats!</h2>
+                <p>You've seen all the cats. Check out your summary!</p>
+            </div>
+        </div>
+
+        <div class="summary-section" id="summarySection" style="display: none;">
+            <h2>Your Cat Preferences</h2>
+            <div class="stats">
+                <div class="stat">
+                    <span class="number" id="likedCount">0</span>
+                    <span class="label">Liked</span>
+                </div>
+                <div class="stat">
+                    <span class="number" id="dislikedCount">0</span>
+                    <span class="label">Disliked</span>
+                </div>
+            </div>
+            <div class="liked-cats" id="likedCats">
+                <h3>Cats You Liked</h3>
+                <div class="liked-grid" id="likedGrid">
+                    <!-- Liked cat images will be displayed here -->
+                </div>
+            </div>
+            <button class="restart-btn" id="restartBtn">Start Over</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
