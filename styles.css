@@ -176,32 +176,31 @@ header p {
 }
 
 @media (max-width: 768px) {
-    .app-container {
-        min-height: auto !important;
+    body {
         display: block !important;
+        align-items: unset !important;
+        justify-content: unset !important;
+        min-height: auto !important;
+    }
+    .app-container {
+        display: block !important;
+        min-height: auto !important;
         padding-top: 0 !important;
+        padding-bottom: 0 !important;
     }
     header {
-        margin-bottom: 4px !important;
+        margin-bottom: 0 !important;
     }
     .summary-section {
-        margin-top: 4px !important;
-        padding: 10px !important;
+        margin-top: 0 !important;
+        padding-top: 8px !important;
         margin-bottom: 8px !important;
     }
 }
 @media (max-width: 480px) {
-    .app-container {
-        min-height: auto !important;
-        display: block !important;
-        padding-top: 0 !important;
-    }
-    header {
-        margin-bottom: 2px !important;
-    }
     .summary-section {
-        margin-top: 2px !important;
-        padding: 6px !important;
+        margin-top: 0 !important;
+        padding-top: 4px !important;
         margin-bottom: 4px !important;
     }
 }
